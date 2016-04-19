@@ -1,0 +1,66 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+<title>欢迎登录</title> 
+<link rel="stylesheet" href="css/login.css"> 
+<script type="text/javascript" src="js/AllUrl.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/cookie_util.js"></script>
+<script type="text/javascript">
+  $(function(){
+	  if(getCookie("userId")!=null){
+		  location.href=wlof_url+"/main.html";
+	  }
+	  $("#login").click(function(){
+		  var username=$("#user").val();
+		  var pass=$("#pass").val;	 
+		  $.ajax({
+			   url:wlof_url+"/User/Login.do",
+			   type:"post",
+			   data:{"username":username,"pass":pass},
+			   dataType:"json",
+			   success:function(result){
+				  if(result.status==0){
+					  var userId=result.data.ww_user_id;
+					  //alert一个值后不能重定向
+					  addCookie("userId",userId);
+					  location.href=wlof_url+"/main.html";
+				  }  
+			   },
+			   error:function(){
+				   alert("登录失败!");
+			   }
+		   });
+	   });
+  });
+</script>
+</head> 
+<body> 
+<div class="wrap"> 
+  <form action="#" method="post"> 
+    <section class="loginForm"> 
+      <header> 
+        <h1>欢迎登录</h1> 
+      </header> 
+      <div class="loginForm_content"> 
+        <fieldset> 
+          <div class="inputWrap"> 
+            <input type="text" id="user" name="userName" placeholder="请输入用户名" autofocus required> 
+          </div> 
+          <div class="inputWrap"> 
+            <input type="password" id="pass" name="password" placeholder="请输入密码" required> 
+          </div> 
+        </fieldset> 
+        <fieldset> 
+          <input type="submit" value="登录" id="login"> 
+          <a href="#">忘记密码？</a> <a href="register.html">注册</a> 
+        </fieldset> 
+      </div> 
+    </section> 
+  </form> 
+</div> 
+
+
+</body> 
+</html>

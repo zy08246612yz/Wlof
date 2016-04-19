@@ -1,0 +1,13 @@
+package com.Invotation;
+
+public class TimeBook implements TimeBookInterface {
+
+	@Override
+	public void doAutiding(String name) {
+    /**
+     * 进行审核的相关信息
+     */
+		
+	}
+
+}

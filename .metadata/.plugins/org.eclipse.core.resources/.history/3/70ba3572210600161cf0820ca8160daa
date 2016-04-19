@@ -1,0 +1,6 @@
+package org.lyyz.werewolf.service;
+
+public interface UserService {
+
+	public Result CheckUserAndPass(String username,String pass);
+}

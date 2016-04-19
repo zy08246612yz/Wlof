@@ -1,0 +1,14 @@
+package org.lyyz.werewolf.service;
+
+import org.lyyz.werewolf.util.Result;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	public Result CheckUserAndPass(String username, String pass) {
+		Result result=new Result();
+		return result;
+	}
+
+}

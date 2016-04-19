@@ -1,0 +1,52 @@
+* {
+	padding:0;
+	margin:0;
+}
+.btn:link , .btn:visited , #cont {
+	color:#B6B6B6;	
+}
+div {
+	
+	margin:0 auto;
+}
+/*版面大小*/
+#logo {
+	height:61px;
+	width:960px;
+}
+#btn {
+	width:960px;
+	height:91px;
+}
+#main {
+	height:500px;
+	padding-top:10px;
+}
+#cont {
+	height:50px;
+	width:960px;	
+}
+#copy {
+	width:960px;
+	height:50px;
+	color:#ccc;
+	font-family:"微软雅黑","文泉驿正黑","黑体";
+	font-size:18px;
+	line-height: 50px;
+	text-align: center;
+}
+#cont>p {
+	text-align: center;	
+	line-height: 50px;
+}
+#logo div {
+	height:20px;
+	width:50px;
+	line-height: 59px;
+	float:right;
+	margin-right:10px;
+	color:#fff;
+}
+.btn:hover {
+	color:yellow;
+}

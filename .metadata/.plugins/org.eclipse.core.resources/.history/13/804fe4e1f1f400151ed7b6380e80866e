@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<title>测试使用</title>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/jquery.min.js"></script>
+</head>
+<body>
+<h1>Helloword</h1>
+ 
+ <p>
+   <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-sort-by-attributes"></span>
+   </button>
+   <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
+   </button>
+   <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-sort-by-order"></span>
+   </button>
+   <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-sort-by-order-alt"></span>
+   </button>
+</p>
+
+<button type="button" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-user"></span> User
+</button>
+</body>
+</html>

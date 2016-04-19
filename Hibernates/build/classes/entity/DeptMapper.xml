@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="dao.DeptDaoInter">
+   <select id="findAll" resultMap="deptMap">
+       select * from dept
+   </select>
+   
+   <delete id="delById" parameterType="integer">
+      delete from dept where deptno=#{deptno}
+   </delete>
+   
+   
+   <select id="findById" resultType="entity.Dept" parameterType="integer">
+      select * from dept where deptno=#{deptno}
+   </select>
+   
+   
+   <insert id="insertDept" parameterType="entity.Dept">
+   insert into dept values(#{deptno},#{dname},#{loc})
+   </insert>
+   
+   <update id="updateDept" parameterType="entity.Dept">
+   update dept set dname=#{dname} where deptno=#{deptno}
+   </update>
+   
+   
+   <select id="selectMap" resultType="java.util.HashMap" parameterType="integer" >
+     select deptno,dname from dept 
+    </select>
+   
+   
+   <resultMap type="entity.Dept" id="deptMap">
+   <result property="deptno" column="deptno"/>
+   <result property="dname" column="dname"/>
+   <result property="loc" column="loc"/>
+   </resultMap>
+ </mapper>

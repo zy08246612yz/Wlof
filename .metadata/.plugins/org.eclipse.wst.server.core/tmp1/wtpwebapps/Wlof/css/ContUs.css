@@ -1,0 +1,28 @@
+body {
+	background-color: #341771;
+}
+#logo {
+	background-image: url("../img/logo-contus.png");
+}
+#main {
+	width:1300px;	
+}
+#main div {
+	height:490px;;
+	width:300px;;
+	float:left;
+	margin:5px;
+}
+#main img {
+	margin:5px 20px;
+}
+#main p {
+	color:yellow;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	line-height: 30px;
+}
+#yzj_out{
+	width:230px;
+	height:360px;
+}

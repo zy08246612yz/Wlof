@@ -1,0 +1,1 @@
+var wlof_url = "http://localhost/Wlof";

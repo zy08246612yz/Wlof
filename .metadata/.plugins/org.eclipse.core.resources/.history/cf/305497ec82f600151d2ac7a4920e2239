@@ -1,0 +1,23 @@
+/*
+¶¥²¿ÑùÊ½±àÐ´
+*/
+.top{
+	background-color:black;
+	height:40px;
+	width:100%;
+	position:absolute;
+}
+
+.top_left{
+	margin-left:100px;
+	float:left;
+	margin-top:6px;
+}
+.top_left span,.top_right span{
+	font-size: 18px;
+}
+.top_right{
+	float:right;
+	margin-right:100px;
+	margin-top:6px;
+}

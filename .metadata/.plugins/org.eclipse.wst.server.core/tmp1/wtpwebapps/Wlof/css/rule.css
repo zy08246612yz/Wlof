@@ -1,0 +1,43 @@
+body {
+	background-color: #800080;
+}
+#main {
+	width:960px;
+	height:auto;
+	color:#ffc90e;
+}
+#logo {
+	background-image: url("../img/logo-rule.png");
+}
+
+h1 {
+	font-size: 50px;
+	text-align:center;
+	color:#ff0;
+}
+h2 {
+	font-size:30px;
+	margin:10px;
+	color:#ee0;
+}
+h3 {
+	font-size:20px;
+	color:#ee0;
+}
+#main p,li{
+	font-size:20px;
+	margin-left:50px;
+	align:center;
+}
+#main li {
+	margin-left:60px;
+}
+#main table {
+	margin:0 auto;
+	text-align:center;
+	border-collapse: collapse;	
+}
+#main td{
+	border:1px solid yellow;
+	padding:3px;
+}

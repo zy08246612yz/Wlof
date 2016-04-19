@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>游戏主页面</title>
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+         $(function(){
+        	 $(".main_image").mouseenter(function(e){
+        		 $("#div_img").show();
+        		 $("#div_img").css("top",e.clientY+"px").css("left",e.clientX+"px")
+        	 });
+        	 $(".main_image").mouseleave(function(){
+        		 $("#div_img").hide();
+        	 });
+         });
+    </script>
+  </head>
+  
+  <body>
+  
+  <!--游戏主页面的div -->
+  <div class="main">
+     <!--显示系统公告 -->
+     <div class="main_system"></div>
+     <!-- 顶部的8个人 -->
+     <div class="main_top">
+         <div class="main_people_1">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>1.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_2">
+             <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>2.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_3">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>3.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_4">
+             <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>4.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_5">
+             <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>5.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_6">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>6.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_7">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>7.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_8">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>8.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_9">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>9.</span><span>不能说话的人</span>
+            </div>
+         </div>
+     </div>
+     
+     
+     <!-- 中间的聊天框 -->
+     <div style="clear:both;"></div>
+     
+     <div class="main_center">
+     <!-- 游戏进程 -->
+        <div class="center_1">
+         <div class="center_1_div1" style="width:100%;height:12%;margin-bottom:1%;">
+         <span class="center_span">游戏进程</span>
+         <span style="display: inline-block; width:55%;text-align: right;"><button type="button" class="btn btn-primary">清  空</button></span>
+         </div>
+         <div style="width:100%;height:87%; background-color:black;color:white;overflow:scroll;">
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         
+         </div>
+        </div>
+        
+     <!-- 公共频道 -->   
+        <div class="center_2">
+           <div class="center_2_div1" style="width:100%;height:12%;margin-bottom:1%;">
+             <span class="center_span">公共频道</span>
+             <span style="display: inline-block; width:80%;text-align: right;"><button type="button" class="btn btn-primary">清  空</button></span>
+           </div>
+         <div style="width:100%;height:77%; background-color:black;color:white;overflow:scroll;">
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         </div>
+         <div   style="width:100%;height:10%">
+         <input type="text" style="width:80%;"/><input type="button" value="发送" style="width:20%"/>
+         </div>
+        </div>
+        
+     <!-- 团队频道 -->   
+        <div class="center_3">
+            <div class="center_3_div1" style="width:100%;height:12%; margin-bottom:1%;">
+              <span class="center_span">团队频道</span>
+              <span style="display: inline-block; width:55%;text-align: right;"><button type="button" class="btn btn-primary">清  空</button></span>
+            </div>
+         <div style="width:100%;height:77%; background-color:black;color:white;overflow:scroll;">
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         游戏进行中:12321432<br/>
+         </div>
+         <div   style="width:100%;height:10%">
+         <input type="text" style="width:80%;"/><input type="button" value="发送" style="width:20%"/>
+         </div>
+        </div>
+        
+     <!-- 旁观者 -->   
+        <div class="center_4">
+        <div class="center_4_div1" style="width:100%;height:12%; margin-bottom:1%;text-align:center;">
+              <span style="line-height: 30px;color:#1fd112;font-size: 18px;">游戏身份</span>
+         </div>
+     
+          <!-- 进入游戏后的两种不同状况 -->
+          <div class="center_4_div2" style="display: none;">
+          <p><span class="span_name">村民</span></p>
+          <span class="span_time">时间倒计时:</span><br/>
+          <span class="span_time_s">60</span>
+          </div>
+          
+          <div class="center_4_div2" >
+          <p><span class="span_name">旁观者</span></p>
+          <div>
+             <p> <button type="button" class="btn btn-primary">开始游戏</button>
+             </p>
+             <p>
+             <button type="button" class="btn btn-primary">离开房间</button>
+          </div>
+          </div>
+        </div>
+        
+     </div>
+     
+     
+     <!-- 底部的8个人 -->
+     <div class="main_bottom">
+         <div class="main_people_10">
+         <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>18.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_11">
+          <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+             </div>
+            <div class="main_name">
+            <span>17.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_12">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>16.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_13">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>15.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_14">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>14.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_15">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>13.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_16">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>12.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_17">
+           <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>11.</span><span>不能说话的人</span>
+            </div>
+         </div>
+         <div class="main_people_18">
+            <div class="main_image">
+            <a href="#"><img src="images/ys.jpg"/></a>
+            </div>
+            <div class="main_name">
+            <span>10.</span><span>不能说话的人</span>
+            </div>
+         </div>
+     </div>
+  </div>
+  
+  <div id="div_img">
+      <p>名称</p>
+      <p>名称</p>
+      <p>名称</p>
+  </div>
+  
+  </body>
+</html>

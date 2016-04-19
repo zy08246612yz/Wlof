@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>狼人杀首页</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+   <script src="bootstrap/js/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 顶部 -->
+<div class="top">
+   <div class="top_left">
+   <a href="#"><span>游戏教程</span></a>
+    <span>|</span>
+   <a href="#"><span>游戏攻略</span></a>
+   </div>
+   <div class="top_right">
+   <a href="#"><span>进入游戏</span></a><span>|</span>
+   <a href="#"><span>游戏公告</span></a><span>|</span>
+   <a href="#"><span>开发团队</span></a>
+   </div>
+</div>
+
+<!-- 内容 -->
+<div class="content">
+<div class="content_img"><img src="images/middle.jpg"/></div>
+<div class="content_left"><img src="images/left.jpg"/></div>
+
+<div class="content_middle"></div>
+
+<div class="content_right"><img src="images/right.jpg"/></div>
+</div>
+
+
+<!-- 尾部 -->
+<div class="bottom">
+<img src="images/bottom.png"/>
+</div>
+
+
+</body>
+</html>

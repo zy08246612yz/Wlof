@@ -1,0 +1,12 @@
+package org.lyyz.werewolf.service;
+
+import org.lyyz.werewolf.util.Result;
+
+public class UserServiceImpl implements UserService {
+
+	public Result CheckUserAndPass(String username, String pass) {
+		
+		return null;
+	}
+
+}

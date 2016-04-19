@@ -1,0 +1,5 @@
+.top{
+	position:absolute;
+	height:40px;
+	background-color:gray;
+}

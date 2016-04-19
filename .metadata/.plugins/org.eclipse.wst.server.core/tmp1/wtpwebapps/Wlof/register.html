@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎注册狼人杀</title>
+<script src="js/register.js"></script>
+<link href="css/normalize.css" rel="stylesheet"/>
+<link href="css/jquery-ui.css" rel="stylesheet"/>
+<link href="css/jquery.idealforms.min.css" rel="stylesheet" media="screen"/>
+<link href="css/register.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="row">
+  <div class="eightcol last">
+    <form id="my-form" action="">
+        <section name="第一步">
+          <div><label>用户名:</label><input id="username" name="username" type="text"/></div>
+          <div><label>昵称:</label><input id="nick" name="username" type="text"/></div>
+          <div><label>密码:</label><input id="pass" name="password" type="password"/></div>
+          <div><label>确认密码:</label><input id="sure_pass" name="password" type="password"/></div>
+          <div><label>邮 箱:</label><input id="email" name="email" data-ideal="required email" type="email"/></div>
+        </section>
+        <section name="第二步">
+          <div id="like_actors">
+            <label>喜爱的身份:</label>
+            <label><input type="checkbox" name="langs[]" value="1"/>村民</label>
+            <label><input type="checkbox" name="langs[]" value="2"/>狼人</label>
+            <label><input type="checkbox" name="langs[]" value="3"/>预言家</label>
+            <label><input type="checkbox" name="langs[]" value="4"/>女巫</label>
+            <label><input type="checkbox" name="langs[]" value="5"/>小女孩</label>
+            <label><input type="checkbox" name="langs[]" value="6"/>猎人</label>
+            <label><input type="checkbox" name="langs[]" value="7"/>丘比特</label>
+            <label><input type="checkbox" name="langs[]" value="8"/>守卫</label>
+          </div> 
+        </section>
+        <section name="第三步">
+          <div><label>电话:</label><input type="tel" name="phone" data-ideal="phone" id="tel"/></div>
+          <div><label>省份:</label>
+          <select id="province" name="states">
+            <option value="default">&ndash;请选择省份 &ndash;</option>
+            <option value="BJ">北京</option>
+            <option value="SH">上海</option>
+            <option value="TJ">天津</option>
+            <option value="CQ">重庆</option>
+            <option value="AH">安徽</option>
+            <option value="FJ">福建</option>
+            <option value="GS">甘肃</option>
+            <option value="GD">广东</option>
+			<option value="GX">广西</option>
+			<option value="GZ">贵州</option>
+			<option value="HAIN">海南</option>
+			<option value="HB">河北</option>
+			<option value="HLJ">黑龙江</option>
+			<option value="HEN">河南</option>
+			<option value="HUN">湖南</option>
+			<option value="HUB">湖北</option>
+			<option value="JL">吉林</option>
+			<option value="JS">江苏</option>
+			<option value="JX">江西</option>
+			<option value="LN">辽宁</option>
+			<option value="NX">宁夏</option>
+			<option value="NMG">内蒙古</option>
+			<option value="QH">青海</option>
+			<option value="SD">山东</option>
+			<option value="TY">山西</option>
+			<option value="XA">陕西</option>
+			<option value="SC">四川</option>
+			<option value="XZ">西藏</option>
+			<option value="XJ">新疆</option>
+			<option value="YN">云南</option>
+			<option value="ZJ">浙江</option>
+			<option value="HK">香港</option>
+			<option value="MK">澳门</option>
+			<option value="TL">台湾</option>
+          </select>
+        </div>
+        <div><label>备注:</label><textarea id="comments" name="comments"></textarea></div>
+      </section>
+      <div><hr/></div>
+      <div>
+        <button type="submit">提交</button>
+        <button id="reset" type="button">重置</button>
+        <a href="login.html"><button type="button">返回登录</button></a>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.idealforms.js"></script>
+<script type="text/javascript" src="js/wolf.js"></script>
+<div style="text-align:center;">
+</div>
+</body>
+</html>

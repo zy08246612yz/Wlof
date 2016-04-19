@@ -1,0 +1,46 @@
+body {
+	background-color: #000;
+}
+#logo {
+	background-image: url(../img/logo-aboutus.png);
+}
+.photo {
+	height:480px;
+	width:270px;
+	float:left;
+	margin:6px 24px;
+}
+#main {
+	width:90%;
+	
+}
+#lx img {
+	margin:5px;
+}
+#lx img:hover , #yh img:hover , #zy img:hover ,#yzj img:hover{
+	position: relative;
+	left:5px;
+	bottom:5px;
+}
+#yh img , #zy img ,#yzj img{
+	margin:5px 10px;
+}
+#yzj img{
+	height:350px;
+	width:230px;
+}
+#main p {
+	color:gray;
+	margin:10px auto;
+	margin-left:10px;
+}
+#main .name {
+	margin:10px auto;
+	color:olive;
+	text-align: center;
+	font-family: "叶根友毛笔行书2.0版","文泉驿正黑","黑体";
+	font-size: 30px;
+}
+div {
+	border:0;
+}

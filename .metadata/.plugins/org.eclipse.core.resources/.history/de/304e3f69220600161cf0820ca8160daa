@@ -1,0 +1,5 @@
+package org.lyyz.werewolf.controller;
+
+public class UserController {
+
+}

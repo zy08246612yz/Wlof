@@ -1,0 +1,32 @@
+package org.lyyz.werewolf.service;
+
+import javax.annotation.Resource;
+
+import org.lyyz.werewolf.dao.UserDao;
+import org.lyyz.werewolf.entity.User;
+import org.lyyz.werewolf.util.MD5;
+import org.lyyz.werewolf.util.Result;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Resource
+	private UserDao userDao;
+	
+	public Result CheckUserAndPass(String username, String pass) {
+		Result result=new Result();
+		User user=userDao.CheckUserAndPass(username);
+		System.out.println(user.getWw_user_password());
+		if(MD5.md5(pass).equals(user.getWw_user_password())){
+			result.setMsg("ÃÜÂë´íÎó,µÇÂ¼Ê§°Ü!");
+			result.setStatus(1);
+		}else{
+			result.setMsg("µÇÂ¼³É¹¦!");
+			result.setData(user);
+			result.setStatus(0);
+		}
+		return result;
+	}
+
+}

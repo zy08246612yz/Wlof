@@ -1,0 +1,7 @@
+package org.lyyz.werewolf.dao;
+
+import org.lyyz.werewolf.entity.User;
+
+public interface UserDao {
+     public  User CheckUserAndPass(String username,String pass);
+}

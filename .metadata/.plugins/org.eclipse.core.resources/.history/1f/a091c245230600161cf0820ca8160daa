@@ -1,0 +1,22 @@
+package org.lyyz.werewolf.controller;
+
+import javax.annotation.Resource;
+
+import org.lyyz.werewolf.service.UserService;
+import org.lyyz.werewolf.util.Result;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/User")
+public class UserController {
+
+	@Resource
+	private UserService userService;
+	
+	@RequestMapping("/Login.do")
+	public Result execute(String username,String pass){
+		Result result=userService.CheckUserAndPass(username, pass);
+		return result;
+	} 
+}
